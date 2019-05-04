@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Calculator</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+</head>
+
+<body style="margin:0%">
+  <main>
+    <div id='input-stored' class='input-stored'></div>
+    <div style="position: fixed; bottom: 0;width: 100%">
+      <div id="input-main" class="input-main"></div>
+      <div>
+        <div class="row">
+          <div class="column">
+            <button class="black-button" onclick="calc('C')">C</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('neg')">&plusmn;</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('mod')">%</button>
+          </div>
+          <div class="column">
+            <button class="red-button" onclick="calc('div')">&divide;</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <button class="black-button" onclick="calc('7')">7</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('8')">8</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('9')">9</button>
+          </div>
+          <div class="column">
+            <button class="red-button" onclick="calc('mul')">&times;</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <button class="black-button" onclick="calc('4')">4</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('5')">5</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('6')">6</button>
+          </div>
+          <div class="column">
+            <button class="red-button" onclick="calc('sub')">-</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <button class="black-button" onclick="calc('1')">1</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('2')">2</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('3')">3</button>
+          </div>
+          <div class="column">
+            <button class="red-button" onclick="calc('add')">+</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <button class="black-button" onclick="calc('0')">0</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc(',')">,</button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('back')">
+              <i class="fas fa-backspace"></i>
+            </button>
+          </div>
+          <div class="column">
+            <button class="black-button" onclick="calc('res')">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js" type="module"></script>
+  <script src="calc.js"></script>
+</body>
+</html>
